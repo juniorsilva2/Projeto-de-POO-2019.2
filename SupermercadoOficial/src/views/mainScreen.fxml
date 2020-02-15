@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MainScreen">
+   <children>
+      <TitledPane animated="false" text="untitled">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="381.0" prefWidth="600.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Histórico de Movimentação" />
+                  <Button layoutX="415.0" layoutY="225.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Acessar Caixa" />
+                  <Button layoutX="14.0" layoutY="225.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Registrar Produto" />
+                  <Button layoutX="14.0" layoutY="164.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Cadastrar Fornecedor" />
+                  <Button layoutX="415.0" layoutY="164.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Registrar Compra" />
+                  <Button layoutX="415.0" layoutY="100.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Histórico de Compras" />
+                  <Button layoutX="14.0" layoutY="100.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Cadastrar Cliente" />
+                  <Button layoutX="415.0" layoutY="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Histórico de Vendas" />
+                  <Button layoutX="14.0" layoutY="333.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="103.0" text="Logout" />
+                  <Button layoutX="215.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Atualizar Funcionário" />
+                  <TextField layoutX="215.0" layoutY="27.0" promptText="Código do Funcionário" />
+                  <Button layoutX="215.0" layoutY="128.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Atualizar Cliente" />
+                  <TextField layoutX="215.0" layoutY="100.0" promptText="Código do Cliente" />
+                  <Button layoutX="215.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Atualizar Fornecedor" />
+                  <TextField layoutX="215.0" layoutY="172.0" promptText="Código do Fornecedor" />
+                  <Button layoutX="215.0" layoutY="273.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Atualizar Produto" />
+                  <TextField layoutX="215.0" layoutY="245.0" promptText="Codígo do Produto" />
+               </children></AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

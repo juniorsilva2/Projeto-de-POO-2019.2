@@ -56,6 +56,7 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -64,8 +65,12 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1Xc76dR5Q8daISCEtBfYzHqU8U3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -86,11 +91,12 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="public" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -210,6 +216,7 @@
       <workItem from="1581333360898" duration="5771000" />
       <workItem from="1581598116199" duration="17000" />
       <workItem from="1581702383881" duration="6729000" />
+      <workItem from="1581776350471" duration="1001000" />
     </task>
     <servers />
   </component>
@@ -221,10 +228,11 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="26" key="#Project_Structure" timestamp="1581333850599">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="515" y="37" key="#Project_Structure" timestamp="1581776516396">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="275" y="26" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1581333850599" />
+    <state x="515" y="37" key="#Project_Structure/0.0.2560.1040@0.0.2560.1040" timestamp="1581776516396" />
     <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1581339185586">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
