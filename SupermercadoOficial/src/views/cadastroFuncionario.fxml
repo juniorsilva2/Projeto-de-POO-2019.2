@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="597.0">
+         <children>
+            <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <TextField layoutX="117.0" layoutY="82.0" prefHeight="32.0" prefWidth="317.0" promptText="Nome" />
+            <TextField layoutX="117.0" layoutY="221.0" prefHeight="32.0" prefWidth="191.0" promptText="Telefone 1" />
+            <DatePicker layoutX="117.0" layoutY="320.0" promptText="Data de Nascimento" />
+            <ChoiceBox layoutX="320.0" layoutY="320.0" prefWidth="150.0" />
+            <TextField layoutX="117.0" layoutY="127.0" prefHeight="32.0" prefWidth="317.0" promptText="CPF" />
+            <TextField layoutX="117.0" layoutY="176.0" prefHeight="32.0" prefWidth="317.0" promptText="Endereço" />
+            <TextField layoutX="117.0" layoutY="269.0" prefHeight="32.0" prefWidth="191.0" promptText="Telefone 2" />
+            <Button layoutX="178.0" layoutY="358.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" text="Cadastrar" />
+            <Button layoutX="334.0" layoutY="358.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" text="Cancelar" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

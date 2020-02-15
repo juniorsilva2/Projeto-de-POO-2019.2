@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.registroCompraController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField layoutX="107.0" layoutY="75.0" prefHeight="25.0" prefWidth="364.0" promptText="Código do Produto" />
+      <TextField layoutX="107.0" layoutY="112.0" prefHeight="25.0" prefWidth="255.0" promptText="Código do Pedido" />
+      <TextField layoutX="107.0" layoutY="150.0" prefHeight="25.0" prefWidth="255.0" promptText="Código do Fornecedor" />
+      <TextField layoutX="107.0" layoutY="188.0" prefHeight="25.0" prefWidth="157.0" promptText="Quantidade" />
+      <TextField layoutX="107.0" layoutY="226.0" prefHeight="25.0" prefWidth="157.0" promptText="Valor Total" />
+      <Button layoutX="129.0" layoutY="339.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="113.0" text="Registrar" />
+      <Button layoutX="380.0" layoutY="339.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="113.0" text="Cancelar" />
+   </children>
+</AnchorPane>
