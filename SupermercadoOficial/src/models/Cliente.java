@@ -10,17 +10,27 @@ public class Cliente {
     private String cpf;
     private float totalVendido;
     private String endereco;
-    private String telefone;
+    private String telefone1;
+    private String telefone2;
     private Date datPagamento;
 
-    public Cliente(int codCliente, String nome, String cpf, float totalVendido, String endereco, String telefone, Date datPagamento) {
+    public Cliente(int codCliente, String nome, String cpf, float totalVendido, String endereco, String telefone1,String telefone2, Date datPagamento) {
         this.codCliente = codCliente;
         this.nome = nome;
         this.cpf = cpf;
         this.totalVendido = totalVendido;
         this.endereco = endereco;
-        this.telefone = telefone;
+        this.telefone1 = telefone1;
+        this.telefone2 = telefone2;
         this.datPagamento = datPagamento;
+    }
+
+    public String getTelefone2() {
+        return telefone2;
+    }
+
+    public void setTelefone2(String telefone2) {
+        this.telefone2 = telefone2;
     }
 
     public int getCodCliente() {
@@ -64,11 +74,11 @@ public class Cliente {
     }
 
     public String getTelefone() {
-        return telefone;
+        return telefone1;
     }
 
     public void setTelefone(String telefone) {
-        this.telefone = telefone;
+        this.telefone1 = telefone;
     }
 
     public Date getDatPagamento() {
@@ -89,12 +99,12 @@ public class Cliente {
                 Objects.equals(nome, cliente.nome) &&
                 Objects.equals(cpf, cliente.cpf) &&
                 Objects.equals(endereco, cliente.endereco) &&
-                Objects.equals(telefone, cliente.telefone) &&
+                Objects.equals(telefone1, cliente.telefone1) &&
                 Objects.equals(datPagamento, cliente.datPagamento);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(codCliente, nome, cpf, totalVendido, endereco, telefone, datPagamento);
+        return Objects.hash(codCliente, nome, cpf, totalVendido, endereco, telefone1, datPagamento);
     }
 }

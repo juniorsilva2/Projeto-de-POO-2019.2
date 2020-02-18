@@ -2,30 +2,70 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MainScreen">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainScreenController">
    <children>
-      <TitledPane animated="false" text="untitled">
+      <TitledPane animated="false">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="381.0" prefWidth="600.0">
                <children>
-                  <Button layoutX="14.0" layoutY="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Histórico de Movimentação" />
-                  <Button layoutX="415.0" layoutY="225.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Acessar Caixa" />
-                  <Button layoutX="14.0" layoutY="225.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Registrar Produto" />
-                  <Button layoutX="14.0" layoutY="164.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Cadastrar Fornecedor" />
-                  <Button layoutX="415.0" layoutY="164.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Registrar Compra" />
-                  <Button layoutX="415.0" layoutY="100.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Histórico de Compras" />
-                  <Button layoutX="14.0" layoutY="100.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Cadastrar Cliente" />
-                  <Button layoutX="415.0" layoutY="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" text="Histórico de Vendas" />
-                  <Button layoutX="14.0" layoutY="333.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="103.0" text="Logout" />
-                  <Button layoutX="215.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Atualizar Funcionário" />
-                  <TextField layoutX="215.0" layoutY="27.0" promptText="Código do Funcionário" />
-                  <Button layoutX="215.0" layoutY="128.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Atualizar Cliente" />
-                  <TextField layoutX="215.0" layoutY="100.0" promptText="Código do Cliente" />
-                  <Button layoutX="215.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Atualizar Fornecedor" />
-                  <TextField layoutX="215.0" layoutY="172.0" promptText="Código do Fornecedor" />
-                  <Button layoutX="215.0" layoutY="273.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Atualizar Produto" />
-                  <TextField layoutX="215.0" layoutY="245.0" promptText="Codígo do Produto" />
+                  <Button fx:id="btnHistMovimentacao" layoutX="14.0" layoutY="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="172.0" style="-fx-background-color: #8A2BE2;" text="Movimentação" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="btnAcessCaixa" layoutX="415.0" layoutY="225.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" style="-fx-background-color: #8A2BE2;" text="Acessar Caixa" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="btnRegisProduto" layoutX="14.0" layoutY="225.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" style="-fx-background-color: #8A2BE2;" text="Registrar Produto" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="btnCadastFornecedor" layoutX="14.0" layoutY="164.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" style="-fx-background-color: #8A2BE2;" text="Cadastrar Fornecedor" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="btnRegisCompra" layoutX="415.0" layoutY="164.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" style="-fx-background-color: #8A2BE2;" text="Registrar Compra" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="btnHistCompras" layoutX="415.0" layoutY="100.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" style="-fx-background-color: #8A2BE2;" text="Histórico de Compras" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="btnCadastrarCliente" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" style="-fx-background-color: #8A2BE2;" text="Cadastrar Cliente" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="btnHistVendas" layoutX="415.0" layoutY="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="171.0" style="-fx-background-color: #8A2BE2;" text="Histórico de Vendas" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="btnSair" layoutX="14.0" layoutY="333.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="103.0" style="-fx-background-color: #8A2BE2;" text="Sair" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font></Button>
+                  <Button layoutX="215.0" layoutY="55.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: #8A2BE2;" text="Atualizar Funcionário" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font></Button>
+                  <TextField layoutX="215.0" layoutY="27.0" prefHeight="25.0" prefWidth="174.0" promptText="Código do Funcionário" />
+                  <Button layoutX="215.0" layoutY="128.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-color: #8A2BE2;" text="Atualizar Cliente" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font></Button>
+                  <TextField layoutX="215.0" layoutY="100.0" prefHeight="25.0" prefWidth="172.0" promptText="Código do Cliente" />
+                  <Button layoutX="215.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: #8A2BE2;" text="Atualizar Fornecedor" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font></Button>
+                  <TextField layoutX="215.0" layoutY="172.0" prefHeight="25.0" prefWidth="171.0" promptText="Código do Fornecedor" />
+                  <Button layoutX="215.0" layoutY="273.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #8A2BE2;" text="Atualizar Produto" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font></Button>
+                  <TextField layoutX="215.0" layoutY="245.0" prefHeight="25.0" prefWidth="174.0" promptText="Codígo do Produto" />
                </children></AnchorPane>
         </content>
       </TitledPane>

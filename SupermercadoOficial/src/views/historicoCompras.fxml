@@ -2,12 +2,15 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.historicoComprasController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.historicoComprasController">
    <children>
-      <Button layoutX="14.0" layoutY="41.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="148.0" text="Voltar a Tela Principal" />
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+      <Button fx:id="btnVoltar" layoutX="14.0" layoutY="41.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="183.0" style="-fx-background-color: #8A2BE2;" text="Voltar a Tela Principal" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font></Button>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0" visible="false">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -26,7 +29,10 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Button layoutX="484.0" layoutY="41.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Atualizar" />
+      <Button layoutX="473.0" layoutY="41.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="113.0" style="-fx-background-color: #8A2BE2;" text="Atualizar" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font></Button>
       <TableView layoutX="23.0" layoutY="91.0" prefHeight="295.0" prefWidth="554.0">
         <columns>
           <TableColumn prefWidth="125.0" text="Cod.Produto" />
